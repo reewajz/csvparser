@@ -1,0 +1,8 @@
+{
+    "SitePort": 4000,
+    "DBURL": "mongodb://localhost:27017/",
+    "DB": "megacable",
+    "secrete":"this is a sample scerete!"
+    
+
+}

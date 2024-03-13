@@ -1,0 +1,28 @@
+
+  <div class="container">
+    <h4>Page for insert csv file</h4>
+    <font size="4" color="#ff480082">
+      <%= typeof msg!= 'undefined' ? msg:'' %>
+    </font>
+    <div class="row">
+      <form class="col s12" action="/uploads/rest/v1" method="POST" enctype="multipart/form-data">
+
+      <div id="row">
+
+        <div class="row file-field input-field">
+          <div class="file-path-wrapper col s2">
+            <input type="file" name="csvfile" /><br/><br/>
+            <input class="file-path validate" placeholder="insert file here"/>
+          </div>
+        </div>
+      </div>
+               
+        <div class="row">
+          <button class="btn waves-effect waves-light" type="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+

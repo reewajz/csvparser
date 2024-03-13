@@ -1,0 +1,48 @@
+<% include ./mistakes %>
+<h4>Register Form</h4>	
+<div id="register-page" class="row">
+	<div class="col s12 z-depth-6 card-panel">
+		<form class="register-form" method="POST" >        
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-social-person-outline prefix"></i>
+					<input name="UserName" type="text" class="validate" required value="<%= typeof UserName!='undefined' ? UserName : '' %>">
+					<label for="user_name" class="center-align">Username</label>
+				</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-communication-email prefix"></i>
+					<input name="Email" type="email" class="validate" required value="<%= typeof Email!='undefined' ? Email : '' %>">
+					<label for="" class="center-align">Email</label>
+				</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-action-lock-outline prefix"></i>
+					<input name="Password" type="password" class="validate" required value="<%= typeof Password!='undefined' ? Password : '' %>">
+					<label for="user_passw">Password</label>
+				</div>
+			</div>
+			<div class="row margin">
+				<div class="input-field col s12">
+					<i class="mdi-action-lock-outline prefix"></i>
+					<input name="ConfirmPassword" type="password" required value="<%= typeof ConfirmPassword!='undefined' ? ConfirmPassword : '' %>">
+					<label for="confirm_pass">Re-type password</label>
+				</div>
+			</div>
+			<div class="row">
+					
+				<div class="input-field col s12">
+						<button class="btn waves-effect waves-light" type="submit" name="action">Register
+								<i class="material-icons right">send</i>
+							  </button>
+					<!-- <a href="/auth/register" class="btn waves-effect waves-light col s12">Register Now</a> -->
+				</div>
+				<div class="input-field col s12">
+					<p class="margin center medium-small sign-up">Already have an account? <a href="/auth/login">Login</a></p>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
